@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+          <meta charset="UTF-8">
+
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <title>Yarn Gallery | Textile Products | RS Textile</title>
+
+          <meta name="description"
+                    content="View RS Textile's textile yarn product gallery including cotton, polyester, blended, dyed and specialty yarn products.">
+
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+                    rel="stylesheet">
+
+
+
+          <link rel="stylesheet" href="style.css">
+
+          <link rel="icon" href="images/RS-TEXTILE_LOGO.jpeg">
+
+</head>
+
+<body>
+
+          <!-- <nav>
+
+                    <div class="logo">
+
+                              <img src="images/RS-TEXTILE_LOGO.jpeg">
+
+
+
+                    </div>
+
+                    <a href="index.html">Home</a>
+
+                    <a href="about.html">About</a>
+
+                    <a href="products.html">Products</a>
+
+                    <a href="export.html">Export</a>
+
+                    <a href="gallery.html">Gallery</a>
+
+                    <a href="contact.html">Contact</a>
+
+          </nav> -->
+
+          <!-- <nav class="navbar">
+
+                    <div class="logo">
+                              <a href="index.html">
+                                        <img src="images/RS-TEXTILE_LOGO.jpeg" alt="RS Textile">
+                                        <span>RS TEXTILE</span>
+                              </a>
+                    </div>
+
+                    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open Menu"
+                              onclick="document.getElementById('navMenu').classList.toggle('active')">
+                              ☰
+                    </button>
+
+                    <div class="nav-menu" id="navMenu">
+
+                              <a href="index.html">Home</a>
+
+                              <a href="about.html">About</a>
+
+                              <div class="dropdown">
+                                        <a href="products.html">Products ▼</a>
+
+                                        <div class="dropdown-content">
+                                                  <a href="cotton-yarn.html">100% Cotton Yarn</a>
+                                                  <a href="polyester-yarn.html">Polyester Yarn</a>
+                                                  <a href="blended-yarn.html">Blended Yarn</a>
+                                                  <a href="dyed-yarn.html">Dyed Yarn</a>
+                                                  <a href="organic-yarn.html">Organic Cotton Yarn</a>
+                                                  <a href="fancy-yarn.html">Fancy Yarn</a>
+                                        </div>
+                              </div>
+
+                              <a href="export.html">Export</a>
+
+                              <a href="gallery.html">Gallery</a>
+
+                              <a href="contact.html">Contact</a>
+
+                    </div>
+
+          </nav> -->
+
+          <nav class="navbar">
+
+                    <div class="logo">
+                              <a href="index.html">
+                                        <img src="images/RS-TEXTILE_LOGO.jpeg" alt="RS Textile">
+                                        <span>RS TEXTILE</span>
+                              </a>
+                    </div>
+
+                    <div class="nav-menu">
+                              <a href="index.html">Home</a>
+                              <a href="about.html">About</a>
+                              <a href="products.html">Products</a>
+                              <a href="export.html">Export</a>
+                              <a href="gallery.html">Gallery</a>
+                              <a href="contact.html">Contact</a>
+                    </div>
+
+          </nav>
+
+          <section class="gallery-hero">
+
+                    <div class="gallery-overlay">
+
+                              <h1 data-aos="fade-down">
+                                        Factory & Product Gallery
+                              </h1>
+
+                              <p data-aos="fade-up">
+
+                                        Explore our manufacturing facilities,
+                                        premium yarn collection,
+                                        export packaging and global shipment process.
+
+                              </p>
+
+                    </div>
+
+          </section>
+
+          <section class="gallery-highlights" data-aos="fade-up">
+
+                    <h2>Explore Our Gallery</h2>
+
+                    <p class="gallery-highlights-subtitle">
+                              Discover every stage of our textile manufacturing and export journey.
+                    </p>
+
+                    <div class="gallery-highlights-grid">
+
+                              <div class="gallery-highlight-card">
+
+                                        <div class="gallery-icon">🏭</div>
+
+                                        <h3>Factory</h3>
+
+                                        <p>Modern spinning units equipped with advanced machinery.</p>
+
+                              </div>
+
+                              <div class="gallery-highlight-card">
+
+                                        <div class="gallery-icon">🧵</div>
+
+                                        <h3>Premium Yarn</h3>
+
+                                        <p>High-quality cotton, polyester and blended yarn collection.</p>
+
+                              </div>
+
+                              <div class="gallery-highlight-card">
+
+                                        <div class="gallery-icon">📦</div>
+
+                                        <h3>Packaging</h3>
+
+                                        <p>Export-grade packaging ensuring product safety worldwide.</p>
+
+                              </div>
+
+                              <div class="gallery-highlight-card">
+
+                                        <div class="gallery-icon">🚢</div>
+
+                                        <h3>Export</h3>
+
+                                        <p>Reliable global shipping with timely delivery.</p>
+
+                              </div>
+
+                    </div>
+
+          </section>
+
+          <section class="gallery-page">
+
+                    <h2 data-aos="fade-up">
+                              Our Gallery
+                    </h2>
+
+                    <p class="gallery-subtitle" data-aos="fade-up">
+
+                              A glimpse of our manufacturing excellence,
+                              premium products and export operations.
+
+                    </p>
+
+                    <div class="gallery-filter">
+
+                              <button class="active" onclick="filterGallery('all',this)">All</button>
+
+                              <button onclick="filterGallery('factory',this)">Factory</button>
+
+                              <button onclick="filterGallery('yarn',this)">Yarn</button>
+
+                              <button onclick="filterGallery('packaging',this)">Packaging</button>
+
+                              <button onclick="filterGallery('export',this)">Export</button>
+
+                    </div>
+
+                    <div class="gallery-grid">
+
+                              <div class="gallery-card factory" data-aos="zoom-in">
+
+                                        <img src="images/gallery1.jfif">
+
+                                        <div class="gallery-info">
+
+                                                  <h3>Manufacturing Unit</h3>
+
+                                                  <p>Modern Textile Production Facility</p>
+
+                                        </div>
+
+                              </div>
+
+                              <div class="gallery-card yarn" data-aos="zoom-in">
+
+                                        <img src="images/Images_gallery_cotton1.jpeg">
+
+                                        <div class="gallery-info">
+
+                                                  <h3>Cotton Yarn</h3>
+
+                                                  <p>Premium Export Quality Yarn</p>
+
+                                        </div>
+
+                              </div>
+
+                              <div class="gallery-card factory" data-aos="zoom-in">
+
+                                        <img src="images/gallery3.png">
+
+                                        <div class="gallery-info">
+
+                                                  <h3>Quality Inspection</h3>
+
+                                                  <p>Strict Quality Control Process</p>
+
+                                        </div>
+
+                              </div>
+
+                              <div class="gallery-card packaging" data-aos="zoom-in">
+
+                                        <img src="images/Image_gallery_Packaging.jpeg">
+
+                                        <div class="gallery-info">
+
+                                                  <h3>Packaging</h3>
+
+                                                  <p>Export Grade Packing</p>
+
+                                        </div>
+
+                              </div>
+
+                              <div class="gallery-card warehouse" data-aos="zoom-in">
+
+                                        <img src="images/Image_gallery_Warehouse.jpeg">
+
+                                        <div class="gallery-info">
+
+                                                  <h3>Warehouse</h3>
+
+                                                  <p>Safe Product Storage</p>
+
+                                        </div>
+
+                              </div>
+
+                              <div class="gallery-card export" data-aos="zoom-in">
+
+                                        <img src="images/Image_gallery_Export.jpeg">
+
+                                        <div class="gallery-info">
+
+                                                  <h3>Export Shipment</h3>
+
+                                                  <p>Worldwide Delivery</p>
+
+                                        </div>
+
+                              </div>
+
+                    </div>
+
+          </section>
+
+          <section class="gallery-stats" data-aos="fade-up">
+
+                    <h2>Our Manufacturing Excellence</h2>
+
+                    <p class="gallery-stats-subtitle">
+                              Delivering premium textile products with quality, precision and global export standards.
+                    </p>
+
+                    <div class="gallery-stats-grid">
+
+                              <div class="gallery-stat-card">
+
+                                        <h3>25+</h3>
+
+                                        <p>Factory Photos</p>
+
+                              </div>
+
+                              <div class="gallery-stat-card">
+
+                                        <h3>100+</h3>
+
+                                        <p>Product Images</p>
+
+                              </div>
+
+                              <div class="gallery-stat-card">
+
+                                        <h3>15+</h3>
+
+                                        <p>Export Shipments</p>
+
+                              </div>
+
+                              <div class="gallery-stat-card">
+
+                                        <h3>10+</h3>
+
+                                        <p>Years of Excellence</p>
+
+                              </div>
+
+                    </div>
+
+          </section>
+
+          <section class="gallery-cta" data-aos="zoom-in">
+
+                    <div class="gallery-cta-content">
+
+                              <h2>Interested in Our Products?</h2>
+
+                              <p>
+                                        Explore our premium yarn collection or contact our team for bulk orders and
+                                        export inquiries.
+                              </p>
+
+                              <div class="gallery-cta-buttons">
+
+                                        <a href="products.html" class="btn">
+                                                  View Products
+                                        </a>
+
+                                        <a href="contact.html" class="btn gallery-secondary-btn">
+                                                  Contact Us
+                                        </a>
+
+                              </div>
+
+                    </div>
+
+          </section>
+
+          <div class="lightbox" id="lightbox">
+
+                    <span class="close-lightbox">&times;</span>
+
+                    <img id="lightbox-img">
+
+          </div>
+
+          <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+
+          <script>
+
+                    function filterGallery(category, button) {
+
+                              const cards = document.querySelectorAll(".gallery-card");
+
+                              cards.forEach(card => {
+
+                                        if (category === "all") {
+
+                                                  card.style.display = "block";
+
+                                        }
+
+                                        else if (card.classList.contains(category)) {
+
+                                                  card.style.display = "block";
+
+                                        }
+
+                                        else {
+
+                                                  card.style.display = "none";
+
+                                        }
+
+                              });
+
+                              document.querySelectorAll(".gallery-filter button").forEach(btn => {
+
+                                        btn.classList.remove("active");
+
+                              });
+
+                              button.classList.add("active");
+
+                    }
+
+          </script>
+
+          <script>
+
+                    const galleryImages = document.querySelectorAll(".gallery-card img");
+
+                    const lightbox = document.getElementById("lightbox");
+
+                    const lightboxImg = document.getElementById("lightbox-img");
+
+                    const closeBtn = document.querySelector(".close-lightbox");
+
+                    galleryImages.forEach(img => {
+
+                              img.addEventListener("click", () => {
+
+                                        lightbox.style.display = "flex";
+
+                                        lightboxImg.src = img.src;
+
+                              });
+
+                    });
+
+                    closeBtn.addEventListener("click", () => {
+
+                              lightbox.style.display = "none";
+
+                    });
+
+                    lightbox.addEventListener("click", (e) => {
+
+                              if (e.target === lightbox) {
+
+                                        lightbox.style.display = "none";
+
+                              }
+
+                    });
+
+          </script>
+
+          <footer class="footer" data-aos="fade-up">
+
+                    <div class="footer-container">
+
+                              <div class="footer-box">
+
+                                        <h2>RS TEXTILE</h2>
+
+                                        <p>
+                                                  Premium Manufacturer & Exporter of
+                                                  Cotton Yarn, Polyester Yarn,
+                                                  Blended Yarn and Dyed Yarn.
+                                        </p>
+
+                              </div>
+
+                              <div class="footer-box">
+
+                                        <h3>Quick Links</h3>
+
+                                        <a href="index.html">Home</a>
+
+                                        <a href="about.html">About</a>
+
+                                        <a href="products.html">Products</a>
+
+                                        <a href="gallery.html">Gallery</a>
+
+                                        <a href="contact.html">Contact</a>
+
+                              </div>
+
+                              <div class="footer-box">
+
+                                        <h3>Our Products</h3>
+
+                                        <a href="cotton-yarn.html">Cotton Yarn</a>
+
+                                        <a href="polyester-yarn.html">Polyester Yarn</a>
+
+                                        <a href="blended-yarn.html">Blended Yarn</a>
+
+                                        <a href="dyed-yarn.html">Dyed Yarn</a>
+
+                                        <a href="organic-yarn.html">Organic Yarn</a>
+
+                              </div>
+
+                              <div class="footer-box">
+
+                                        <h3>Contact</h3>
+
+                                        <p>📧 nikshaybapna@gmail.com</p>
+
+                                        <p>📞 +91 6354622395</p>
+
+                                        <p>📞 +91 9145955238</p>
+
+                                        <p>🌍 India</p>
+
+                              </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="copyright">
+
+                              © 2026 RS TEXTILE | All Rights Reserved.
+
+                    </div>
+
+          </footer>
+
+          <script>
+
+                    document.addEventListener("DOMContentLoaded", function () {
+
+                              const menuToggle = document.getElementById("menuToggle");
+                              const navMenu = document.getElementById("navMenu");
+
+                              if (menuToggle && navMenu) {
+
+                                        menuToggle.addEventListener("click", function () {
+
+                                                  navMenu.classList.toggle("active");
+
+                                        });
+
+                                        const navLinks = navMenu.querySelectorAll("a");
+
+                                        navLinks.forEach(function (link) {
+
+                                                  link.addEventListener("click", function () {
+                                                            navMenu.classList.remove("active");
+                                                  });
+
+                                        });
+
+                              }
+
+                    });
+
+          </script>
+
+</body>
+
+</html>
